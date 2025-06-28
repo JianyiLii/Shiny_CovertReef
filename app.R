@@ -15,7 +15,7 @@ ui <- dashboardPage(
       menuItem("The Team", tabName = "team", icon = icon("users")),
       menuItem("Shiny App", tabName = "shinyapp", icon = icon("chart-bar")),
       menuItem("GitHub", icon = icon("github"),
-               href = "https://github.com/JianyiLii/Shiny_CovertReef/tree/main", newtab = TRUE)
+               href = "https://github.com/JianyiLii/Shiny_CovertReef", newtab = TRUE)
     )
   ),
   
