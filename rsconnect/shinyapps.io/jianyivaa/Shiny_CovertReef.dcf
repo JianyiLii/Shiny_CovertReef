@@ -1,0 +1,12 @@
+name: Shiny_CovertReef
+title: Shiny_CovertReef
+username: jianyivaa
+account: jianyivaa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15005035
+bundleId: 10533606
+url: https://jianyivaa.shinyapps.io/Shiny_CovertReef/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
