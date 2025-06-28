@@ -3,7 +3,7 @@ library(shinydashboard)
 
 ui <- dashboardPage(
   skin = "purple",  
-  dashboardHeader(title = span("🌊 COVERT REEF", style = "font-weight: bold")),
+  dashboardHeader(title = span("🌊 COVERT REEF 🪸", style = "font-weight: bold")),
   
   dashboardSidebar(
     sidebarMenu(
