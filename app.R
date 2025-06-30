@@ -7,13 +7,11 @@ ui <- dashboardPage(
   
   dashboardSidebar(
     sidebarMenu(
+      menuItem("Introduction", tabName = "intro", icon = icon("info-circle")),
       menuItem("Proposal", tabName = "proposal", icon = icon("file-alt")),
-      menuItem("Methodology", tabName = "methodology", icon = icon("project-diagram")),
-      menuItem("Findings", tabName = "findings", icon = icon("book")),
-      menuItem("Poster", tabName = "poster", icon = icon("file")),
-      menuItem("Meeting Minutes", tabName = "minutes", icon = icon("calendar-alt")),
-      menuItem("The Team", tabName = "team", icon = icon("users")),
-      menuItem("Shiny App", tabName = "shinyapp", icon = icon("chart-bar")),
+      menuItem("Data Preparation", tabName = "datapre", icon = icon("project-diagram")),
+      menuItem("Tasks", tabName = "tasks", icon = icon("tasks")),
+      menuItem("Team", tabName = "about", icon = icon("users")),
       menuItem("GitHub", icon = icon("github"),
                href = "https://github.com/JianyiLii/Shiny_CovertReef", newtab = TRUE)
     )
@@ -22,6 +20,16 @@ ui <- dashboardPage(
   dashboardBody(
     tags$head(
       tags$style(HTML("
+        .skin-purple .main-header .navbar {
+          background-color: #ffb6c1 !important; /* light pink */
+        }
+        .skin-purple .main-header .logo {
+          background-color: #ffb6c1 !important; /* light pink */
+          color: #222 !important; /* dark text for readability */
+        }
+        .skin-purple .main-header .navbar .sidebar-toggle {
+          color: #222 !important;
+        }
         h1#titleText {
           color: #8e44ad;
           font-weight: bold;
@@ -32,17 +40,31 @@ ui <- dashboardPage(
     ),
     
     tabItems(
-      tabItem(tabName = "proposal", h2("Proposal content here...")),
-      tabItem(tabName = "methodology", h2("Methodology content here...")),
-      tabItem(tabName = "findings", h2("Findings content here...")),
-      tabItem(tabName = "poster", h2("Poster content here...")),
-      tabItem(tabName = "minutes", h2("Meeting Minutes content here...")),
-      tabItem(tabName = "team", h2("Our Amazing Team")),
-      tabItem(tabName = "shinyapp", h2("Shiny App Content Here")),
-      
-      # Homepage or default
-      tabItem(tabName = "dashboard",
-              h1("Covert Reef", id = "titleText"))
+      tabItem(tabName = "intro",
+        div(style = "padding: 20px; max-width: 900px; margin: auto;",
+          h2("Intro")
+        )
+      ),
+      tabItem(tabName = "proposal",
+        div(style = "padding: 20px; max-width: 900px; margin: auto;",
+          h2("Proposal")
+        )
+      ),
+      tabItem(tabName = "datapre",
+        div(style = "padding: 20px; max-width: 900px; margin: auto;",
+          h2("Data Preparation")
+        )
+      ),
+      tabItem(tabName = "tasks",
+        div(style = "padding: 20px; max-width: 900px; margin: auto;",
+          h2("Tasks")
+        )
+      ),
+      tabItem(tabName = "about",
+        div(style = "padding: 20px; max-width: 900px; margin: auto;",
+          h2("Team")
+        )
+      )
     )
   )
 )
