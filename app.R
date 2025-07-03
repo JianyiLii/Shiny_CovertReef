@@ -9,7 +9,6 @@ pacman::p_load(
   ggalluvial, reactable, networkD3, highcharter, leaflet, conflicted
 )
 
-install.packages("conflicted")
 
 
 # Settle Conflict issues

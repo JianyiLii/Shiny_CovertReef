@@ -5,7 +5,7 @@ account: jianyivaa
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15005035
-bundleId: 10560341
+bundleId: 10560756
 url: https://jianyivaa.shinyapps.io/Shiny_CovertReef/
 version: 1
 asMultiple: FALSE
