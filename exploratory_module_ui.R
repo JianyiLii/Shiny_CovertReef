@@ -88,7 +88,22 @@ exploratoryUI <- function(id) {
         
         # === Knowledge Graph ===
         tabPanel("Knowledge Graph",
-                 h3("1.7 Interactive Knowledge Graph"),
+                 h3(
+                   tagList(
+                     "1.7 Interactive Knowledge Graph",
+                     tags$span(
+                       icon("info-circle"),
+                       style = "color: #31708f; cursor: help; margin-left: 8px;",
+                       title = paste(
+                         "• Use the dropdown at top left to filter by node type (e.g., Entity, Event).",
+                         "• Hover over nodes to see attributes like findings, coordination_type, content, etc.",
+                         "• Drag to reposition nodes for clearer viewing.",
+                         sep = "\n"
+                       )
+                     )
+                   )
+                 ),
+                 
                  p("This interactive visualization enables deeper inspection of nodes and their connections using the visNetwork package."),
                  p("Nodes are styled by entity sub-type or category, and hovering reveals tooltips with important fields such as findings, coordination_type, content, etc."),
                  fluidRow(

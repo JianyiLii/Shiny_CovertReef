@@ -10,7 +10,7 @@ dataPrepUI <- function(id) {
       
       fluidRow(
         box(
-          title = "Our Sub-Task for Take Home Ex 03",
+          title = "What is under Data Preparation",
           status = "info",
           solidHeader = TRUE,
           width = 12,
